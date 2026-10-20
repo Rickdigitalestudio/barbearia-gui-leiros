@@ -67,16 +67,7 @@ O site é publicado automaticamente pela branch `main` via **GitHub Pages**:
 
 🔗 [`https://rickdigitalestudio.github.io/barbearia-gui-leiros/`](https://rickdigitalestudio.github.io/barbearia-gui-leiros/)
 
-### Domínio próprio (opcional)
-
-Para usar um domínio como `guileiros.com.br` no futuro:
-
-1. Registre/aponte o domínio no provedor desejado
-2. No provedor do DNS, crie os registros:
-   - `A` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - `CNAME` (para `www`) → `rickdigitalestudio.github.io`
-3. Recrie o arquivo `CNAME` na raiz com o domínio (ou configure em *Settings → Pages → Custom domain*)
-4. Após a propagação (até 24h), ative **HTTPS** em *Settings → Pages → Enforce HTTPS*
+> O site é servido oficialmente pelo endereço acima (GitHub Pages padrão, com HTTPS automático).
 
 ## 👨‍💻 Créditos
 
