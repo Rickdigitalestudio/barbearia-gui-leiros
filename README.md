@@ -45,7 +45,7 @@ barbearia-gui-leiros/
 ├── styles.css      # design system, layout e efeitos 3D
 ├── app.js          # dados, filtros, galeria, tilt e fundo em canvas
 ├── CNAME           # domínio personalizado (guileiros.com.br)
-├── img/            # fotos originais do feed (portfolio-1..6.jpg)
+├── img/            # fotos originais do feed (portfolio-1..11.jpg)
 └── README.md
 ```
 

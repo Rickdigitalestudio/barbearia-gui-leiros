@@ -13,12 +13,17 @@ const SERVICES = [
 ];
 
 const GALLERY = [
-  { n:'01', img:'img/portfolio-5.jpg', t:'Freestyle',      s:'Degradê + desenho navalhado' },
-  { n:'02', img:'img/portfolio-1.jpg', t:'Box Braids',     s:'Tranças na cadeira' },
-  { n:'03', img:'img/portfolio-6.jpg', t:'Social Jovem',   s:'Degradê penteado' },
-  { n:'04', img:'img/portfolio-2.jpg', t:'Social Clássico',s:'Acabamento na navalha' },
-  { n:'05', img:'img/portfolio-4.jpg', t:'Festa Infantil', s:'Dia das Crianças 2.0' },
-  { n:'06', img:'img/portfolio-3.jpg', t:'Comunidade',     s:'Evento Gui Leiros' },
+  { n:'01', img:'img/portfolio-5.jpg',  t:'Freestyle',       s:'Degradê + desenho navalhado' },
+  { n:'02', img:'img/portfolio-1.jpg',  t:'Box Braids',      s:'Tranças na cadeira' },
+  { n:'03', img:'img/portfolio-7.jpg',  t:'Fade Militar',    s:'Corte na régua' },
+  { n:'04', img:'img/portfolio-8.jpg',  t:'Barba Aparada',   s:'Contorno e letreiro' },
+  { n:'05', img:'img/portfolio-9.jpg',  t:'Platinado',       s:'Franja com luzes' },
+  { n:'06', img:'img/portfolio-10.jpg', t:'Luzes',           s:'Franja clareada' },
+  { n:'07', img:'img/portfolio-6.jpg',  t:'Social Jovem',    s:'Degradê penteado' },
+  { n:'08', img:'img/portfolio-2.jpg',  t:'Social Clássico', s:'Acabamento na navalha' },
+  { n:'09', img:'img/portfolio-4.jpg',  t:'Festa Infantil',  s:'Dia das Crianças 2.0' },
+  { n:'10', img:'img/portfolio-3.jpg',  t:'Comunidade',      s:'Evento Gui Leiros' },
+  { n:'11', img:'img/portfolio-11.jpg', t:'Vila Conde',      s:'Torcida e raiz' },
 ];
 
 const QUOTES = [
