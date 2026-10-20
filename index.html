@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Barbearia Gui Leiros — Estilo também se aprende | Rio Grande da Serra</title>
+<meta name="description" content="Barbearia Gui Leiros em Rio Grande da Serra. Cortes, barba, box braids e freestyle com Guilherme Leiros. Agende pelo WhatsApp (11) 97217-9204." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="canonical" href="https://guileiros.com.br/" />
+<meta name="theme-color" content="#0b0b0d" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="Barbearia Gui Leiros" />
+<meta property="og:title" content="Barbearia Gui Leiros — Estilo também se aprende desde cedo" />
+<meta property="og:description" content="Cortes, barba, box braids e freestyle com Guilherme Leiros em Rio Grande da Serra — SP. Agende pelo WhatsApp (11) 97217-9204." />
+<meta property="og:url" content="https://guileiros.com.br/" />
+<meta property="og:image" content="https://guileiros.com.br/img/portfolio-5.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+<canvas id="bg-3d" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="brand">
+    <span class="brand-mark">GL</span>
+    <span class="brand-txt">GUI <b>LEIROS</b></span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#servicos">Serviços</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#equipe">Quem somos</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#local">Localização</a>
+  </nav>
+  <a class="btn btn-gold nav-cta" href="https://wa.me/5511972179204?text=Oi%20Gui!%20Quero%20agendar%20um%20horário." target="_blank" rel="noopener">Agendar</a>
+  <button class="burger" id="burger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <p class="eyebrow reveal">Rio Grande da Serra · SP</p>
+    <h1 class="hero-title">
+      <span class="line reveal">ESTILO TAMBÉM</span>
+      <span class="line reveal">SE <em>APRENDE</em></span>
+      <span class="line reveal">DESDE CEDO</span>
+    </h1>
+    <p class="hero-sub reveal">Cortes, barba, box braids e freestyle feitos na navalha por
+      <b>Guilherme Leiros</b>. Precisão, atitude e um café na espera.</p>
+    <div class="hero-cta reveal">
+      <a class="btn btn-gold" href="https://wa.me/5511972179204?text=Oi%20Gui!%20Quero%20agendar%20um%20horário." target="_blank" rel="noopener">Agendar no WhatsApp</a>
+      <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div><b>4.1k+</b><span>seguidores</span></div>
+      <div><b>+7</b><span>anos de cadeira</span></div>
+      <div><b>100%</b><span>navalha &amp; navalhete</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true"><span></span>scroll</div>
+</section>
+
+<!-- FAIXA MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>DEGRADE ✦ FADE ✦ BOX BRAIDS ✦ FREESTYLE ✦ BARBA NAVALHADA ✦ CORTE INFANTIL ✦ PEZINHO ✦ SOBRANCELHA ✦</span>
+    <span>DEGRADE ✦ FADE ✦ BOX BRAIDS ✦ FREESTYLE ✦ BARBA NAVALHADA ✦ CORTE INFANTIL ✦ PEZINHO ✦ SOBRANCELHA ✦</span>
+  </div>
+</div>
+
+<!-- SERVIÇOS -->
+<section class="section" id="servicos">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">O que fazemos</p>
+      <h2>SERVIÇOS <em>&amp;</em> TABELA</h2>
+      <p class="sec-sub">Escolha o serviço, veja o tempo médio e jogue direto no WhatsApp pra fechar o horário.</p>
+    </header>
+
+    <div class="filter reveal" id="filter" role="tablist">
+      <button class="chip is-active" data-cat="todos">Todos</button>
+      <button class="chip" data-cat="cabelo">Cabelo</button>
+      <button class="chip" data-cat="barba">Barba</button>
+      <button class="chip" data-cat="tranca">Tranças</button>
+      <button class="chip" data-cat="kids">Infantil</button>
+    </div>
+
+    <div class="cards" id="serviceGrid"></div>
+  </div>
+</section>
+
+<!-- GALERIA 3D -->
+<section class="section section-alt" id="galeria">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Portfólio</p>
+      <h2>A CADEIRA <em>não</em> MENTE</h2>
+      <p class="sec-sub">Transformações reais da Vila Conde Siciliano. Arraste o card para girar.</p>
+    </header>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<!-- EQUIPE -->
+<section class="section" id="equipe">
+  <div class="wrap split">
+    <div class="split-media reveal" data-tilt>
+      <div class="scissor-3d" aria-hidden="true">
+        <div class="pole"><i></i><i></i><i></i></div>
+      </div>
+    </div>
+    <div class="split-txt reveal">
+      <p class="eyebrow">Quem segura a navalha</p>
+      <h2>GUILHERME <em>LEIROS</em></h2>
+      <p>Barbeiro, corredor de cadeira e criador do Gui Leiros. Do primeiro corte do pequeno à
+        box braid mais complexa, o trato é o mesmo: cabeça erguida, toalha quente e conversa boa.</p>
+      <ul class="ticks">
+        <li>Especialista em degradê, freestyle e desenho navalhado</li>
+        <li>Box braids e tranças com acabamento limpo</li>
+        <li>Cortes infantis com paciência (e brinquedo) de pai</li>
+        <li>Ambiente clean, música boa e respeito com o tempo de cada cliente</li>
+      </ul>
+      <a class="btn btn-gold" href="https://www.instagram.com/barbeariaguileiros/" target="_blank" rel="noopener">Ver no Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="section section-alt" id="depoimentos">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">A voz da rua</p>
+      <h2>QUEM <em>já</em> SENTOU</h2>
+    </header>
+    <div class="quotes" id="quotes"></div>
+  </div>
+</section>
+
+<!-- AGENDAR -->
+<section class="section cta" id="agendar">
+  <div class="wrap cta-inner reveal">
+    <h2>PRONTO PRA <em>mudar</em> O JOGO?</h2>
+    <p>Manda o horário e o serviço que a gente confirma na hora pelo WhatsApp.</p>
+    <div class="hero-cta">
+      <a class="btn btn-gold btn-lg" href="https://wa.me/5511972179204?text=Oi%20Gui!%20Quero%20agendar%20um%20horário." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <a class="btn btn-ghost btn-lg" href="tel:+5511972179204">Ligar (11) 97217-9204</a>
+    </div>
+  </div>
+</section>
+
+<!-- LOCALIZAÇÃO -->
+<section class="section section-alt" id="local">
+  <div class="wrap split">
+    <div class="split-txt reveal">
+      <p class="eyebrow">Onde a gente está</p>
+      <h2>VILA CONDE <em>Siciliano</em></h2>
+      <ul class="info-list">
+        <li><b>Endereço</b><span>R. Ribeirão Pires, 376 — Vila Conde Siciliano<br/>Rio Grande da Serra — SP · 09450-000</span></li>
+        <li><b>Horário</b><span>Abre às 09:30 · Ter a Dom</span></li>
+        <li><b>Telefone / WhatsApp</b><span><a href="tel:+5511972179204">(11) 97217-9204</a></span></li>
+        <li><b>Instagram</b><span><a href="https://www.instagram.com/barbeariaguileiros/" target="_blank" rel="noopener">@barbeariaguileiros</a></span></li>
+      </ul>
+      <a class="btn btn-gold" href="https://www.google.com/maps/search/Barbearia+Gui+Leiros" target="_blank" rel="noopener">Abrir no Google Maps</a>
+    </div>
+    <div class="map-card reveal">
+      <iframe title="Mapa Barbearia Gui Leiros" loading="lazy" allowfullscreen
+        src="https://www.google.com/maps?q=R.%20Ribeir%C3%A3o%20Pires%2C%20376%20-%20Vila%20Conde%20Siciliano%2C%20Rio%20Grande%20da%20Serra%20-%20SP%2C%2009450-000&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap foot-inner">
+    <a href="#top" class="brand"><span class="brand-mark">GL</span><span class="brand-txt">GUI <b>LEIROS</b></span></a>
+    <p>© <span id="year"></span> Barbearia Gui Leiros · Rio Grande da Serra/SP</p>
+    <div class="foot-links">
+      <a href="https://guileiros.com.br" class="foot-domain">guileiros.com.br</a>
+      <a href="https://www.instagram.com/barbeariaguileiros/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/5511972179204" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<!-- floating whatsapp -->
+<a class="fab" href="https://wa.me/5511972179204?text=Oi%20Gui!%20Quero%20agendar%20um%20horário." target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 01-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 012.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35 1 2.51c.12.16 1.73 2.64 4.19 3.7.58.25 1.04.4 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+</a>
+
+<script src="app.js"></script>
+</body>
+</html>
