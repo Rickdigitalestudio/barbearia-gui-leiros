@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://guileiros.com.br">🌐 guileiros.com.br</a> ·
+  <a href="https://rickdigitalestudio.github.io/barbearia-gui-leiros/">🌐 Site ao vivo</a> ·
   <a href="https://wa.me/5511972179204">📱 WhatsApp (11) 97217-9204</a> ·
   <a href="https://www.instagram.com/barbeariaguileiros/">📸 @barbeariaguileiros</a>
 </p>
@@ -44,7 +44,6 @@ barbearia-gui-leiros/
 ├── index.html      # estrutura semântica e conteúdo
 ├── styles.css      # design system, layout e efeitos 3D
 ├── app.js          # dados, filtros, galeria, tilt e fundo em canvas
-├── CNAME           # domínio personalizado (guileiros.com.br)
 ├── img/            # fotos originais do feed (portfolio-1..11.jpg)
 └── README.md
 ```
@@ -62,19 +61,22 @@ python -m http.server 8000
 # depois abra http://localhost:8000
 ```
 
-## 🌐 Deploy (GitHub Pages + domínio)
+## 🌐 Deploy (GitHub Pages)
 
-O site é publicado automaticamente pela branch `main` via **GitHub Pages**.
+O site é publicado automaticamente pela branch `main` via **GitHub Pages**:
 
-1. Repositório: [`github.com/Ricklima991/barbearia-gui-leiros`](https://github.com/Ricklima991/barbearia-gui-leiros)
-2. O arquivo `CNAME` aponta o domínio **guileiros.com.br**
-3. No provedor do domínio, crie os registros:
+🔗 [`https://rickdigitalestudio.github.io/barbearia-gui-leiros/`](https://rickdigitalestudio.github.io/barbearia-gui-leiros/)
+
+### Domínio próprio (opcional)
+
+Para usar um domínio como `guileiros.com.br` no futuro:
+
+1. Registre/aponte o domínio no provedor desejado
+2. No provedor do DNS, crie os registros:
    - `A` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - `CNAME` (para `www`) → `ricklima991.github.io`
+   - `CNAME` (para `www`) → `rickdigitalestudio.github.io`
+3. Recrie o arquivo `CNAME` na raiz com o domínio (ou configure em *Settings → Pages → Custom domain*)
 4. Após a propagação (até 24h), ative **HTTPS** em *Settings → Pages → Enforce HTTPS*
-
-> Sem domínio próprio, o site também funciona direto em
-> `https://ricklima991.github.io/barbearia-gui-leiros/`
 
 ## 👨‍💻 Créditos
 
